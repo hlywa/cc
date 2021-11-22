@@ -1,18 +1,43 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SkinManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private SpriteRenderer sr;
+    [SerializeField] private MatchmakerSkin matchMakerskin;
+    private int selectedSkin;
+    [SerializeField] private string LevelName;
+
+    public void Awake()
     {
-        
+        PlayerPrefs.SetInt("selectedCharacter", 0);
+    }
+    public void NextOption()
+    {
+        selectedSkin++;
+        if (selectedSkin == matchMakerskin.skins.Count)
+        {
+            selectedSkin = 0;
+        }
+        sr.sprite = matchMakerskin.skins[selectedSkin];
     }
 
-    // Update is called once per frame
-    void Update()
+    public void BackOption()
     {
-        
+        selectedSkin--;
+        if(selectedSkin < 0)
+        {
+            selectedSkin = matchMakerskin.skins.Count - 1;
+        }
+
+        sr.sprite = matchMakerskin.skins[selectedSkin];
+    }
+
+    public void PlayGame()
+    {
+        PlayerPrefs.SetInt("selectedCharacter", selectedSkin);
+        SceneManager.LoadScene(LevelName);
     }
 }
