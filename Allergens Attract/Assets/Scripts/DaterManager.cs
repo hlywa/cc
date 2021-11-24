@@ -6,12 +6,14 @@ using UnityEngine.UI;
 //its missing something HMM HMM 
 public class DaterManager : MonoBehaviour
 {
-    public Image leftSelected;
-    public Image rightSelected;
+    public Image leftSelectedImage;
+    public Image rightSelectedImage;
+    public DateableCharacter firstSelected;
+    public DateableCharacter secondSelected;
+
     //we want it to know which button is on and which is off so we need a reference to all the buttons (SPOILER ALERT A LIST??? AN ARRAY??? HMMMM)
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -26,9 +28,33 @@ public class DaterManager : MonoBehaviour
 
     public void SelectDater(DateableCharacter character)
     {
-        if (leftSelected.sprite == null)
+        if (firstSelected == null)
         {
-            leftSelected.sprite = character.GetComponent<SpriteRenderer>().sprite;
+            firstSelected = character;
+            leftSelectedImage.sprite = character.GetComponent<SpriteRenderer>().sprite;
+        } else if (secondSelected == null)
+        {
+            secondSelected = character;
+            rightSelectedImage.sprite = character.GetComponent<SpriteRenderer>().sprite;
         }
+    }
+
+    public void ClearSelected()
+    {
+        firstSelected = null;
+        leftSelectedImage.sprite = null;
+        secondSelected = null;
+        rightSelectedImage.sprite = null;
+        var buttons = GameObject.FindGameObjectsWithTag("Character Button");
+        foreach (GameObject foundObject in buttons) {
+            foundObject.GetComponent<Button>().interactable = true;
+        }
+
+    }
+
+    public void StartDate()
+    {
+        PlayerPrefs.SetString("firstSelected", firstSelected.characterName);
+        PlayerPrefs.SetString("secondSelected", secondSelected.characterName);
     }
 }
