@@ -8,8 +8,9 @@ public class DaterManager : MonoBehaviour
 {
     public Image leftSelectedImage;
     public Image rightSelectedImage;
-    public DateableCharacter firstSelected;
-    public DateableCharacter secondSelected;
+    private DateableCharacter firstSelected;
+    private DateableCharacter secondSelected;
+    public Button startDateButton;
 
     //we want it to know which button is on and which is off so we need a reference to all the buttons (SPOILER ALERT A LIST??? AN ARRAY??? HMMMM)
     void Start()
@@ -37,6 +38,11 @@ public class DaterManager : MonoBehaviour
             secondSelected = character;
             rightSelectedImage.sprite = character.GetComponent<SpriteRenderer>().sprite;
         }
+
+        if (firstSelected != null && secondSelected != null)
+        {
+            startDateButton.interactable = true;
+        }
     }
 
     public void ClearSelected()
@@ -49,6 +55,7 @@ public class DaterManager : MonoBehaviour
         foreach (GameObject foundObject in buttons) {
             foundObject.GetComponent<Button>().interactable = true;
         }
+        startDateButton.interactable = false;
 
     }
 
