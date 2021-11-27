@@ -5145,7 +5145,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -232, y: -149}
+  m_AnchoredPosition: {x: 400, y: -222.00002}
   m_SizeDelta: {x: 51.27, y: 26.2223}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &361942916
@@ -5356,7 +5356,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -184, y: -82}
+  m_AnchoredPosition: {x: 322, y: -226.00002}
   m_SizeDelta: {x: 99.2245, y: 25.8016}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &540147794
@@ -5851,7 +5851,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d4827905c4512324abc8a423623b4368, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178aa7151ddab48ac9a620fd341efdf0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5870,8 +5870,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1306988886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 307.3258, y: 165.7381, z: 0}
-  m_LocalScale: {x: 140.62943, y: 82.35413, z: 15.782665}
+  m_LocalPosition: {x: 314, y: 180, z: 0}
+  m_LocalScale: {x: 38.793938, y: 38.95673, z: 38.47578}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -5912,7 +5912,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -224, y: 73}
+  m_AnchoredPosition: {x: 17, y: -125}
   m_SizeDelta: {x: 56.2165, y: 26.825}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1322261602
@@ -7022,7 +7022,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -162, y: -17}
+  m_AnchoredPosition: {x: 212, y: -223}
   m_SizeDelta: {x: 118.9634, y: 24.0072}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1919392085
