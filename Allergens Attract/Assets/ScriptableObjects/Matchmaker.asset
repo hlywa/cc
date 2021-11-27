@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Matchmaker
   m_EditorClassIdentifier: 
   skins:
-  - {fileID: 21300000, guid: d08cbc7481998b348b915e10c7973c13, type: 3}
-  - {fileID: 21300000, guid: 83b9739a75ce2424b829071b47a85038, type: 3}
-  - {fileID: 21300000, guid: e8ac9911b6034274d9f65bc7270b1f0f, type: 3}
+  - {fileID: 21300000, guid: 952ee3a3629304bcaae264b8f90072e8, type: 3}
+  - {fileID: 21300000, guid: 9f64a8beea4d64e299128523cb1764b6, type: 3}
+  - {fileID: 21300000, guid: b69d83fe9ef834018a45f6f1fa451b48, type: 3}
