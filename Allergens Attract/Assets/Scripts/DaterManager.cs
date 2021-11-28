@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 //its missing something HMM HMM 
 public class DaterManager : MonoBehaviour
@@ -33,7 +34,8 @@ public class DaterManager : MonoBehaviour
         {
             firstSelected = character;
             leftSelectedImage.sprite = character.GetComponent<SpriteRenderer>().sprite;
-        } else if (secondSelected == null)
+        }
+        else if (secondSelected == null)
         {
             secondSelected = character;
             rightSelectedImage.sprite = character.GetComponent<SpriteRenderer>().sprite;
@@ -52,7 +54,8 @@ public class DaterManager : MonoBehaviour
         secondSelected = null;
         rightSelectedImage.sprite = null;
         var buttons = GameObject.FindGameObjectsWithTag("Character Button");
-        foreach (GameObject foundObject in buttons) {
+        foreach (GameObject foundObject in buttons)
+        {
             foundObject.GetComponent<Button>().interactable = true;
         }
         startDateButton.interactable = false;
@@ -63,5 +66,15 @@ public class DaterManager : MonoBehaviour
     {
         PlayerPrefs.SetString("firstSelected", firstSelected.characterName);
         PlayerPrefs.SetString("secondSelected", secondSelected.characterName);
+
+        string levelname = firstSelected.characterName + secondSelected.characterName + "Date";
+
+        if (levelname == "AppleBeeDate" || levelname == "MoldAppleDate" || levelname == "MoldBeeDate")
+        {
+            levelname = secondSelected.characterName + firstSelected.characterName + "Date";
+        }
+
+        SceneManager.LoadScene(levelname);
     }
-}
+
+    }
