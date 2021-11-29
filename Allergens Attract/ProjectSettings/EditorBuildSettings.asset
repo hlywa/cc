@@ -36,6 +36,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Dates/DustinAppleDate.unity
     guid: 00a407e619630d84cad67aea05941a1e
   - enabled: 1
+    path: Assets/Scenes/Dates/MiloAppleDate.unity
+    guid: 69089403debcbb7458a070c3df01e45f
+  - enabled: 1
+    path: Assets/Scenes/Dates/MiloBeeDate.unity
+    guid: 035ceb5adb387074dbf2af2fc3afcd3c
+  - enabled: 1
+    path: Assets/Scenes/Dates/MiloDustinDate.unity
+    guid: 7267b1c5ff729994f93c922a67fc380e
+  - enabled: 1
+    path: Assets/Scenes/Dates/MiloMiltonDate.unity
+    guid: ac1ca769b474b2f488e838ceb289f97f
+  - enabled: 1
+    path: Assets/Scenes/Dates/MiloMoldDate.unity
+    guid: e330df76148f82b46ac5a39152417e1e
+  - enabled: 1
     path: Assets/Scenes/Dates/DustinMiltonDate.unity
     guid: 155a1d20fda65f24f8ab806c38353767
   - enabled: 1
