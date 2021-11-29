@@ -501,6 +501,56 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
+--- !u!1 &319817010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 319817011}
+  - component: {fileID: 319817012}
+  m_Layer: 0
+  m_Name: Matchmaker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &319817011
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319817010}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.198554, y: -1.5748236, z: 1032.2937}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 529033570}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &319817012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319817010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: Matchmaker
+  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  soundEffect: {fileID: 8300000, guid: 7d3431540e17a574c88094a568fafcb3, type: 3}
+  portraits: []
+  portraitsFace: 0
+  setSayDialog: {fileID: 154181690}
+  description: 
 --- !u!1 &334675928
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,7 +580,7 @@ Transform:
   m_LocalScale: {x: 0.64981854, y: 0.7699714, z: 1}
   m_Children: []
   m_Father: {fileID: 529033570}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &334675930
 SpriteRenderer:
@@ -570,8 +620,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -702663747
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ee14c791480921b4aad361705b3edd27, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1017,6 +1067,7 @@ Transform:
   m_LocalPosition: {x: 4.198554, y: 1.5748236, z: -1032.2937}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 319817011}
   - {fileID: 1171976706}
   - {fileID: 1212284303}
   - {fileID: 334675929}
@@ -1266,12 +1317,6 @@ GameObject:
   m_Component:
   - component: {fileID: 673752632}
   - component: {fileID: 673752631}
-  - component: {fileID: 673752630}
-  - component: {fileID: 673752629}
-  - component: {fileID: 673752628}
-  - component: {fileID: 673752625}
-  - component: {fileID: 673752624}
-  - component: {fileID: 673752623}
   - component: {fileID: 673752663}
   - component: {fileID: 673752662}
   - component: {fileID: 673752661}
@@ -1305,6 +1350,7 @@ GameObject:
   - component: {fileID: 673752633}
   - component: {fileID: 673752627}
   - component: {fileID: 673752626}
+  - component: {fileID: 673752623}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1321,70 +1367,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 673752622}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 10cd462c89cb047158ccfb8a8df3f60a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 6
+  itemId: 43
   indentLevel: 0
-  storyText: 'Heeey '
-  description: 
-  character: {fileID: 1171976705}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &673752624
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 673752622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 5
-  indentLevel: 0
-  storyText: How do you do?
-  description: 
-  character: {fileID: 1212284304}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &673752625
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 673752622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 4
-  indentLevel: 0
-  _sceneName:
-    stringRef: {fileID: 0}
-    stringVal: MatchingScene
-  loadingImage: {fileID: 2800000, guid: 56ccaffade4c01141a998ff10643944d, type: 3}
-  sceneNameOLD: 
+  spriteRenderer: {fileID: 334675930}
+  _visible:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  affectChildren: 1
+  visibleOLD: 0
 --- !u!114 &673752626
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1400,7 +1393,7 @@ MonoBehaviour:
   itemId: 38
   indentLevel: 0
   targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
+  targetBlock: {fileID: 673752651}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -1433,69 +1426,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &673752628
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 673752622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 1
-  indentLevel: 0
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 2
-  durationOLD: 0
---- !u!114 &673752629
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 673752622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 673752630}
-  suppressBlockAutoSelect: 0
-  waitForFrames: 1
---- !u!114 &673752630
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 673752622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -72
-    y: 46
-    width: 111
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 0
-  blockName: New Block
-  description: 
-  eventHandler: {fileID: 673752629}
-  commandList:
-  - {fileID: 673752628}
-  - {fileID: 673752624}
-  - {fileID: 673752623}
-  - {fileID: 673752625}
-  suppressAllAutoSelections: 0
 --- !u!114 &673752631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1520,8 +1450,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 673752630}
+  selectedBlocks: []
   selectedCommands: []
   variables: []
   description: 
@@ -1589,7 +1518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 671.00397
+    x: 760.00397
     y: 60.572968
     width: 213
     height: 40
@@ -1619,7 +1548,7 @@ MonoBehaviour:
   itemId: 34
   indentLevel: 0
   targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
+  targetBlock: {fileID: 673752634}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -1720,7 +1649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 30
   indentLevel: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 334675930}
   _visible:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -1740,7 +1669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 29
   indentLevel: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1898445768}
   _visible:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -1760,8 +1689,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 513.54694
-    y: 8.306221
+    x: 517.54694
+    y: 5.306221
     width: 206
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1793,7 +1722,7 @@ MonoBehaviour:
   itemId: 27
   indentLevel: 0
   targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
+  targetBlock: {fileID: 673752634}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -1868,7 +1797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 24
   indentLevel: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1898445768}
   _visible:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -1900,6 +1829,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 673752645}
+  - {fileID: 673752623}
   - {fileID: 673752644}
   - {fileID: 673752643}
   - {fileID: 673752642}
@@ -1920,7 +1850,7 @@ MonoBehaviour:
   indentLevel: 0
   text: Talk about a hobby you have.
   description: 
-  targetBlock: {fileID: 0}
+  targetBlock: {fileID: 673752641}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -1943,9 +1873,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 21
   indentLevel: 0
-  text: Tell them you workout.
+  text: Ask what their favorite movie is!
   description: 
-  targetBlock: {fileID: 0}
+  targetBlock: {fileID: 673752646}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -1970,12 +1900,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 306.40912
     y: 60.487534
-    width: 240
+    width: 173
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 15
-  blockName: Matchmaker Choice 1  (Copy) (Copy)
+  blockName: Matchmaker Choice 1
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -2015,7 +1945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 857.409
+    x: 1007.409
     y: 61.450058
     width: 183
     height: 40
@@ -2058,7 +1988,7 @@ MonoBehaviour:
   itemId: 17
   indentLevel: 0
   targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
+  targetBlock: {fileID: 673752649}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -2078,7 +2008,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 16
   indentLevel: 0
-  storyText: Bzzz! Seems like this bad apple likes to live on the wild side.
+  storyText: Well looks like you two might have different tastes...
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2105,7 +2035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 41
   indentLevel: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 334675930}
   _visible:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -2125,7 +2055,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 14
   indentLevel: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1898445768}
   _visible:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -2145,9 +2075,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 13
   indentLevel: 0
-  storyText: Uh, that's nice? I'm more of a hivebody myself, not a fan of danger.
+  storyText: Don't those have subtitles? I like action movies!
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1171976705}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2172,9 +2102,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 40
   indentLevel: 0
-  storyText: I like a bit of danger. You can show me your stinger anytime.
+  storyText: I'm excited about the indie movies that are out.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1212284304}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2199,9 +2129,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 0
-  storyText: Oh! Um, thank you? People are usually scared when they see me.
+  storyText: Heeeey
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1171976705}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2226,9 +2156,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 10
   indentLevel: 0
-  storyText: Hey you're bee-utiful.
+  storyText: How do you do?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1212284304}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2271,7 +2201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1898445768}
   _visible:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -2291,8 +2221,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 124.591034
-    y: 59.942093
+    x: 91.591034
+    y: 63.942093
     width: 189
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2668,7 +2598,7 @@ Transform:
   m_LocalScale: {x: 0.715, y: 0.7479, z: 1}
   m_Children: []
   m_Father: {fileID: 529033570}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1106596067
 SpriteRenderer:
@@ -2753,7 +2683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: Red
   nameColor: {r: 1, g: 1, b: 1, a: 1}
-  soundEffect: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: deac954fd0268f44bb51d07acf395c49, type: 3}
   portraits: []
   portraitsFace: 0
   setSayDialog: {fileID: 1190949595}
@@ -2770,7 +2700,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 529033570}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1190949594
 GameObject:
@@ -3096,7 +3026,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 529033570}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1212284304
 MonoBehaviour:
@@ -3112,7 +3042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: Milton
   nameColor: {r: 1, g: 1, b: 1, a: 1}
-  soundEffect: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: 75c042a13782e6e40b25e9a8e013df94, type: 3}
   portraits: []
   portraitsFace: 0
   setSayDialog: {fileID: 154181690}
@@ -3748,6 +3678,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2af16235b005d8345bbddaa94a427b3c, type: 3}
+--- !u!212 &1898445768 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4869983743763281572, guid: 2af16235b005d8345bbddaa94a427b3c, type: 3}
+  m_PrefabInstance: {fileID: 1898445767}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1933373866
 GameObject:
   m_ObjectHideFlags: 0
