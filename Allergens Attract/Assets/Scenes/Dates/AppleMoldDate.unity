@@ -766,9 +766,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 349527249}
-  selectedCommands:
-  - {fileID: 349527247}
+  - {fileID: 349527256}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
