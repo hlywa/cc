@@ -69,7 +69,7 @@ public class DaterManager : MonoBehaviour
 
         string levelname = firstSelected.characterName + secondSelected.characterName + "Date";
 
-        if (levelname == "AppleBeeDate" || levelname == "MoldAppleDate" || levelname == "MoldBeeDate")
+        if (levelname == "AppleBeeDate" || levelname == "MoldAppleDate" || levelname == "MoldBeeDate" || levelname == "AppleMiltonDate" || levelname == "BeeMiltonDate" || levelname == "MoldMiltonDate")
         {
             levelname = secondSelected.characterName + firstSelected.characterName + "Date";
         }

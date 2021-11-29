@@ -23,4 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BeeMoldDate.unity
     guid: 90f10a59add7303488691d04bb4f3677
+  - enabled: 1
+    path: Assets/Scenes/MiltonAppleDate.unity
+    guid: 6bb14f6b029a33549aa5ba40b664d0ad
+  - enabled: 1
+    path: Assets/Scenes/MiltonMoldDate.unity
+    guid: 7e7b1b154adce5746b3e09086d25fdef
+  - enabled: 1
+    path: Assets/Scenes/MiltonBeeDate.unity
+    guid: d1aadcadabda0f54f81054bb5019a5f1
   m_configObjects: {}
