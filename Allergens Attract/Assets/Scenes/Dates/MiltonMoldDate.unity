@@ -741,10 +741,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: Myco
   nameColor: {r: 1, g: 1, b: 1, a: 1}
-  soundEffect: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: f560c0f36d4538b468b132939755678e, type: 3}
   portraits: []
   portraitsFace: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1432779040}
   description: 
 --- !u!4 &583451991
 Transform:
@@ -3079,10 +3079,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: Milton
   nameColor: {r: 1, g: 1, b: 1, a: 1}
-  soundEffect: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: 75c042a13782e6e40b25e9a8e013df94, type: 3}
   portraits: []
   portraitsFace: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1651607734}
   description: 
 --- !u!4 &1620080353
 Transform:
