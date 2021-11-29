@@ -1050,7 +1050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: Milton
   nameColor: {r: 1, g: 1, b: 1, a: 1}
-  soundEffect: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: 75c042a13782e6e40b25e9a8e013df94, type: 3}
   portraits: []
   portraitsFace: 0
   setSayDialog: {fileID: 1195553034}
@@ -1169,7 +1169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: Clover
   nameColor: {r: 1, g: 1, b: 1, a: 1}
-  soundEffect: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: c8abb42450888454995b895c8736c3f5, type: 3}
   portraits: []
   portraitsFace: 0
   setSayDialog: {fileID: 25261510}
@@ -1448,6 +1448,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2af16235b005d8345bbddaa94a427b3c, type: 3}
+--- !u!212 &1088912485 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4869983743763281572, guid: 2af16235b005d8345bbddaa94a427b3c, type: 3}
+  m_PrefabInstance: {fileID: 1088912484}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1180947629
 GameObject:
   m_ObjectHideFlags: 0
@@ -3122,6 +3127,7 @@ GameObject:
   - component: {fileID: 2109079146}
   - component: {fileID: 2109079145}
   - component: {fileID: 2109079144}
+  - component: {fileID: 2109079179}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -3144,7 +3150,7 @@ MonoBehaviour:
   itemId: 31
   indentLevel: 0
   targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
+  targetBlock: {fileID: 2109079166}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -3218,14 +3224,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 844.00397
-    y: 86.57297
-    width: 213
+    x: 840.00397
+    y: 96.57297
+    width: 131
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 20
-  blockName: Date Continue (Copy) (Copy)
+  blockName: Date Continue
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -3248,7 +3254,7 @@ MonoBehaviour:
   itemId: 27
   indentLevel: 0
   targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
+  targetBlock: {fileID: 2109079147}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -3333,7 +3339,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2109079166}
+  - {fileID: 2109079161}
   selectedCommands: []
   variables: []
   description: 
@@ -3401,7 +3407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 23
   indentLevel: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1755245479}
   _visible:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -3421,7 +3427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 22
   indentLevel: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1088912485}
   _visible:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -3441,14 +3447,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 686.54694
-    y: 34.30622
-    width: 206
+    x: 678.54694
+    y: 32.30622
+    width: 124
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 19
-  blockName: Bad Choice 1 (Copy) (Copy)
+  blockName: Bad Choice 1
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -3474,7 +3480,7 @@ MonoBehaviour:
   itemId: 36
   indentLevel: 0
   targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
+  targetBlock: {fileID: 2109079147}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -3549,7 +3555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 17
   indentLevel: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1088912485}
   _visible:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -3569,18 +3575,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 684.1844
-    y: 172.69379
-    width: 214
+    x: 681.1844
+    y: 160.69379
+    width: 132
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 18
-  blockName: Good Choice 1 (Copy) (Copy)
+  blockName: Good Choice 1
   description: 
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 2109079160}
+  - {fileID: 2109079179}
   - {fileID: 2109079159}
   - {fileID: 2109079158}
   - {fileID: 2109079157}
@@ -3599,9 +3606,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 33
   indentLevel: 0
-  text: Talk about a hobby you have.
+  text: bad
   description: 
-  targetBlock: {fileID: 0}
+  targetBlock: {fileID: 2109079156}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -3624,9 +3631,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 14
   indentLevel: 0
-  text: Tell them you workout.
+  text: good
   description: 
-  targetBlock: {fileID: 0}
+  targetBlock: {fileID: 2109079161}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -3649,14 +3656,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 479.40912
-    y: 86.48753
-    width: 240
+    x: 462.40912
+    y: 91.48753
+    width: 173
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 15
-  blockName: Matchmaker Choice 1  (Copy) (Copy)
+  blockName: Matchmaker Choice 1
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -3696,14 +3703,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1110.4089
-    y: 94.45006
-    width: 183
+    x: 1025.4089
+    y: 99.45006
+    width: 101
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 12
-  blockName: End Date (Copy) (Copy)
+  blockName: End Date
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -3739,7 +3746,7 @@ MonoBehaviour:
   itemId: 10
   indentLevel: 0
   targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
+  targetBlock: {fileID: 2109079164}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -3786,7 +3793,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1755245479}
   _visible:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -3806,7 +3813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 7
   indentLevel: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1088912485}
   _visible:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -3952,7 +3959,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1088912485}
   _visible:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -3994,3 +4001,23 @@ MonoBehaviour:
   - {fileID: 2109079169}
   - {fileID: 2109079168}
   suppressAllAutoSelections: 0
+--- !u!114 &2109079179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109079143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10cd462c89cb047158ccfb8a8df3f60a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 37
+  indentLevel: 0
+  spriteRenderer: {fileID: 1755245479}
+  _visible:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  affectChildren: 1
+  visibleOLD: 0
