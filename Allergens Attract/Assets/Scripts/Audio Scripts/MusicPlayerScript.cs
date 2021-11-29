@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class MusicPlayerScript : MonoBehaviour
 {
-    public AudioSource AudioSource;
+    private AudioSource AudioSource;
+    public GameObject ObjectMusic;
 
     private float musicVolume = 1f;
     void Start()
     {
-        AudioSource.Play();
+        ObjectMusic = GameObject.FindWithTag("GameMusic");
+        AudioSource = ObjectMusic.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

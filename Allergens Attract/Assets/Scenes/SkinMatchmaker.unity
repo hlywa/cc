@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 221244978}
   - component: {fileID: 221244977}
   m_Layer: 5
-  m_Name: nextButton (1)
+  m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -290,8 +290,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.4, y: -8.4}
-  m_SizeDelta: {x: 464.4992, y: 311.7422}
+  m_AnchoredPosition: {x: 0.00000095367, y: 25}
+  m_SizeDelta: {x: 385.3148, y: 347.8264}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &221244977
 MonoBehaviour:
@@ -357,7 +357,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9c709356ad0faf34ba9b2557488aa5bf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6e3142dfb45874618bcdd110bfa39bfe, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1081,7 +1081,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4869983743763281573, guid: 2af16235b005d8345bbddaa94a427b3c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.2
+      value: 0.43
       objectReference: {fileID: 0}
     - target: {fileID: 4869983743763281573, guid: 2af16235b005d8345bbddaa94a427b3c, type: 3}
       propertyPath: m_LocalPosition.z
