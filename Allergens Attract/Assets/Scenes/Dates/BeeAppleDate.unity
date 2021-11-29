@@ -1079,6 +1079,7 @@ GameObject:
   - component: {fileID: 349111028}
   - component: {fileID: 349111027}
   - component: {fileID: 349111026}
+  - component: {fileID: 349111035}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1133,9 +1134,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 67
-    y: 70
-    width: 69.0909
+    x: 1.0909157
+    y: 68.86364
+    width: 107
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1168,21 +1169,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 349.9147, y: 42.2496}
+  scrollPos: {x: 338.3868, y: 13.366703}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.8800001
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 349111016}
-  selectedCommands:
-  - {fileID: 349111026}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 349111028}
   - {fileID: 349111027}
@@ -1346,7 +1345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 7
   indentLevel: 0
-  storyText: Uh, that's nice? I'm more of a hiebody myself, not a fan of danger.
+  storyText: Uh, that's nice? I'm more of a hivebody myself, not a fan of danger.
   description: 
   character: {fileID: 276546402}
   portrait: {fileID: 0}
@@ -1502,9 +1501,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 485.54932
+    x: 493.5038
     y: 69.494514
-    width: 91.81817
+    width: 131
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1531,9 +1530,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 338.31955
-    y: 16.364132
-    width: 83.863625
+    x: 336.04684
+    y: 17.227768
+    width: 124
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1543,6 +1542,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 349111014}
+  - {fileID: 349111035}
   - {fileID: 349111032}
   - {fileID: 349111031}
   - {fileID: 349111030}
@@ -1562,9 +1562,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 332.59344
+    x: 333.68427
     y: 155.61533
-    width: 91.81817
+    width: 132
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1642,9 +1642,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 169
-    y: 67
-    width: 137.2727
+    x: 128.90903
+    y: 69.40908
+    width: 176
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1710,9 +1710,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 663.99994
-    y: 68.0989
-    width: 61.136356
+    x: 679.90894
+    y: 70.371605
+    width: 101
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1745,7 +1745,7 @@ MonoBehaviour:
   visibleOLD: 0
 --- !u!114 &349111026
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1963,6 +1963,26 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &349111035
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349110998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10cd462c89cb047158ccfb8a8df3f60a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 34
+  indentLevel: 0
+  spriteRenderer: {fileID: 286735740}
+  _visible:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  affectChildren: 1
+  visibleOLD: 0
 --- !u!1 &401760292
 GameObject:
   m_ObjectHideFlags: 0
